@@ -6,10 +6,11 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
 >
 
-    <context:annotation-config />
+    <!--
     <context:property-placeholder location="application.properties" />
     <context:component-scan base-package="com.mycompany.invoice.controller.web" />
     <context:component-scan base-package="com.mycompany.invoice.service.prefix" />
     <context:component-scan base-package="com.mycompany.invoice.repository.database" />
+    -->
 
 </beans>
