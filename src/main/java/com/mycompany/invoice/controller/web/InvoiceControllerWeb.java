@@ -1,10 +1,14 @@
-package com.mycompany.invoice.controller;
+package com.mycompany.invoice.controller.web;
 
+import com.mycompany.invoice.controller.InvoiceControllerInterface;
 import com.mycompany.invoice.entity.Invoice;
 import com.mycompany.invoice.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-public class InvoiceControllerDouchette implements InvoiceControllerInterface {
+@Controller
+public class InvoiceControllerWeb implements InvoiceControllerInterface {
 
     @Autowired
     private InvoiceServiceInterface invoiceService;
@@ -17,11 +21,10 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface {
         this.invoiceService = invoiceService;
     }
 
-    @Override
     public void createInvoice() {
-        System.out.println("Usage of a scanner");
+        String customerName = "Tesla";
         Invoice invoice = new Invoice();
-        invoice.setCustomerName("Virgin Galactic");
+        invoice.setCustomerName(customerName);
         invoiceService.createInvoice(invoice);
     }
 }
