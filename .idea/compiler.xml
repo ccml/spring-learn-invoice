@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core-invoice" />
         <module name="core" />
+        <module name="spring-learn-invoice" />
       </profile>
     </annotationProcessing>
   </component>
