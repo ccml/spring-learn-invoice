@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 //@Service
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
     @Value("${invoice.lastNumber}")
@@ -45,5 +47,10 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
     public void createInvoice(Invoice invoice) {
         invoice.setNumber(String.valueOf(prefix + (++lastNumber)));
         invoiceRepository.create(invoice);
+    }
+
+    @Override
+    public List<Invoice> list() {
+        return invoiceRepository.list();
     }
 }
