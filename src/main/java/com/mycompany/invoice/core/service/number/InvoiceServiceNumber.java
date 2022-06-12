@@ -1,14 +1,14 @@
-package com.mycompany.invoice.service.number;
+package com.mycompany.invoice.core.service.number;
 
-import com.mycompany.invoice.entity.Invoice;
-import com.mycompany.invoice.repository.InvoiceRepositoryInterface;
-import com.mycompany.invoice.service.InvoiceServiceInterface;
+import com.mycompany.invoice.core.entity.Invoice;
+import com.mycompany.invoice.core.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoice.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
+//@Service
 public class InvoiceServiceNumber implements InvoiceServiceInterface {
 
     private static long lastNumber = 0L;

@@ -1,16 +1,15 @@
-package com.mycompany.invoice.service.prefix;
+package com.mycompany.invoice.core.service.prefix;
 
-import com.mycompany.invoice.entity.Invoice;
-import com.mycompany.invoice.repository.InvoiceRepositoryInterface;
-import com.mycompany.invoice.service.InvoiceServiceInterface;
+import com.mycompany.invoice.core.entity.Invoice;
+import com.mycompany.invoice.core.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoice.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//@Service
+@Service
 public class InvoiceServicePrefix implements InvoiceServiceInterface {
     @Value("${invoice.lastNumber}")
     private long lastNumber;

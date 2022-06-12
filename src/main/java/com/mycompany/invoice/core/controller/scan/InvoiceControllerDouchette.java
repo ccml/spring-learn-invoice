@@ -1,10 +1,9 @@
-package com.mycompany.invoice.controller.scan;
+package com.mycompany.invoice.core.controller.scan;
 
-import com.mycompany.invoice.controller.InvoiceControllerInterface;
-import com.mycompany.invoice.entity.Invoice;
-import com.mycompany.invoice.service.InvoiceServiceInterface;
+import com.mycompany.invoice.core.controller.InvoiceControllerInterface;
+import com.mycompany.invoice.core.entity.Invoice;
+import com.mycompany.invoice.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 
 //@Controller
 public class InvoiceControllerDouchette implements InvoiceControllerInterface {

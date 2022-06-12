@@ -1,10 +1,9 @@
-package com.mycompany.invoice.controller.keyboard;
+package com.mycompany.invoice.core.controller.keyboard;
 
-import com.mycompany.invoice.controller.InvoiceControllerInterface;
-import com.mycompany.invoice.entity.Invoice;
-import com.mycompany.invoice.service.InvoiceServiceInterface;
+import com.mycompany.invoice.core.controller.InvoiceControllerInterface;
+import com.mycompany.invoice.core.entity.Invoice;
+import com.mycompany.invoice.core.service.InvoiceServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 
 import java.util.Scanner;
 

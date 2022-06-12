@@ -1,7 +1,7 @@
-package com.mycompany.invoice.service;
+package com.mycompany.invoice.core.service;
 
-import com.mycompany.invoice.entity.Invoice;
-import com.mycompany.invoice.repository.InvoiceRepositoryInterface;
+import com.mycompany.invoice.core.entity.Invoice;
+import com.mycompany.invoice.core.repository.InvoiceRepositoryInterface;
 
 import java.util.List;
 
