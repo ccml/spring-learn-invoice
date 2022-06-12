@@ -23,6 +23,16 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
         return List.of(invoice1, invoice2);
     }
 
+    @Override
+    public Invoice getById(String number) {
+        Invoice invoice = new Invoice();
+        invoice.setNumber(number);
+        invoice.setCustomerName("EDF");
+        invoice.setOrderNumber("ON_002");
+        return invoice;
+    }
+
+
     public void create(Invoice invoice) {
         invoices.add(invoice);
         System.out.println("Database : Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
