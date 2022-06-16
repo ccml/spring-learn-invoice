@@ -9,5 +9,5 @@ public interface InvoiceServiceInterface {
     List<Invoice> list();
     Invoice getInvoiceByNumber(String number);
     void setInvoiceRepository(InvoiceRepositoryInterface invoiceRepository);
-    void createInvoice(Invoice invoice);
+    Invoice createInvoice(Invoice invoice);
 }
