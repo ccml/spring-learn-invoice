@@ -7,5 +7,5 @@ import java.util.List;
 public interface InvoiceRepositoryInterface {
     List<Invoice> list();
     Invoice getById(String number);
-    void create(Invoice invoice);
+    Invoice create(Invoice invoice);
 }

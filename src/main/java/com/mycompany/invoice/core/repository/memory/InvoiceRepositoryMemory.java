@@ -22,8 +22,9 @@ public class InvoiceRepositoryMemory implements InvoiceRepositoryInterface {
         throw new UnsupportedOperationException();
     }
 
-    public void create(Invoice invoice) {
+    public Invoice create(Invoice invoice) {
         invoices.add(invoice);
         System.out.println("Invoice added with number " + invoice.getNumber() + " for " + invoice.getCustomerName());
+        return invoice;
     }
 }
