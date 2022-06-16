@@ -1,3 +1,4 @@
+/*
 package com.mycompany.invoice.core.repository.database;
 
 import com.mycompany.invoice.core.entity.Invoice;
@@ -55,3 +56,4 @@ public class InvoiceRepositoryDatabase implements InvoiceRepositoryInterface {
         return invoice;
     }
 }
+*/

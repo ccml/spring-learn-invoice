@@ -45,17 +45,17 @@ public class InvoiceServicePrefix implements InvoiceServiceInterface {
 
     public Invoice createInvoice(Invoice invoice) {
         invoice.setNumber(String.valueOf(prefix + (++lastNumber)));
-        invoiceRepository.create(invoice);
+        invoiceRepository.save(invoice);
         return invoice;
     }
 
     @Override
-    public List<Invoice> list() {
-        return invoiceRepository.list();
+    public Iterable<Invoice> list() {
+        return invoiceRepository.findAll();
     }
 
     @Override
     public Invoice getInvoiceByNumber(String number) {
-        return invoiceRepository.getById(number);
+        return invoiceRepository.findById(number).orElseThrow();
     }
 }
