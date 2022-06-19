@@ -1,4 +1,4 @@
-package com.mycompany.invoice.core.entity;
+package com.mycompany.invoice.core.entity.customer;
 
 import javax.persistence.*;
 

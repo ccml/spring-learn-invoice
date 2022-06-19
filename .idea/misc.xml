@@ -5,6 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../customer/pom.xml" />
+        <option value="$PROJECT_DIR$/../invoice/pom.xml" />
+        <option value="$PROJECT_DIR$/../product/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-learn-invoice-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../service-discovery/pom.xml" />
       </list>
     </option>
   </component>

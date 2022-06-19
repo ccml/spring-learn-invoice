@@ -7,18 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
-        <module name="spring-learn-invoice" />
+        <module name="product" />
         <module name="core-invoice" />
         <module name="spring-learn-invoice-web" />
+        <module name="invoice-web" />
+        <module name="spring-learn-invoice" />
+        <module name="invoice" />
+        <module name="service-discovery" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="invoice-web" target="11" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="customer" options="-parameters" />
+      <module name="invoice" options="-parameters" />
       <module name="invoice-web" options="-parameters" />
+      <module name="product" options="-parameters" />
+      <module name="service-discovery" options="-parameters" />
       <module name="spring-learn-invoice" options="-parameters" />
       <module name="spring-learn-invoice-web" options="-parameters" />
     </option>

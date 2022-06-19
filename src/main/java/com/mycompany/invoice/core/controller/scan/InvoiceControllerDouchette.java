@@ -1,11 +1,9 @@
 package com.mycompany.invoice.core.controller.scan;
 
-import com.mycompany.invoice.core.controller.InvoiceControllerInterface;
-import com.mycompany.invoice.core.entity.Customer;
-import com.mycompany.invoice.core.entity.Invoice;
-import com.mycompany.invoice.core.service.InvoiceServiceInterface;
+import com.mycompany.invoice.core.entity.customer.Customer;
+import com.mycompany.invoice.core.entity.invoice.Invoice;
 import org.springframework.beans.factory.annotation.Autowired;
-
+/*
 //@Controller
 public class InvoiceControllerDouchette implements InvoiceControllerInterface {
 
@@ -30,3 +28,4 @@ public class InvoiceControllerDouchette implements InvoiceControllerInterface {
         return null;
     }
 }
+*/
